@@ -1,0 +1,25 @@
+ion-content {
+    --background: #2a2360;
+
+    h2 {
+        font-size: 22px;
+        color: #2a2360;
+    }
+
+    ion-title {
+        text-align: center;
+    }
+
+    .card-interno {
+        border: 2px solid #2a2360;
+        box-shadow: none;
+        border-radius: 10px;
+        color: #2a2360;
+    }
+
+    .icone {
+        font-size: 48px;
+        float: left;
+        padding-right: 10px;
+    }
+}

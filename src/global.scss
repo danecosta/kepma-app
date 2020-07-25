@@ -26,3 +26,35 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;600&display=swap");
+
+:root,
+:root[mode="ios"],
+:root[mode="md"] {
+    --ion-font-family: "Barlow", sans-serif !important;
+}
+
+.titulo {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+ion-card.card-principal {
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+
+.card-content-md p {
+    font-size: 14px;
+}
+
+.line {
+    top: 397px;
+    left: 190px;
+    width: 34px;
+    height: 6px;
+    background: #52e28c 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 1em auto;
+}

@@ -46,7 +46,7 @@ export class LoginPage extends Utils implements OnInit {
             usuario: retorno.email
           }
         };
-        this.navCtrl.navigateForward('bem-vindo', navigationExtras);
+        this.navCtrl.navigateForward('home', navigationExtras);
       }
     });
   }
@@ -64,9 +64,10 @@ export class LoginPage extends Utils implements OnInit {
         })
         .catch((err) => {
           loading.dismiss();
+          this.exibirMensagem('Ops!', 'Usuário não cadastrado.');
         });
     } else {
-      this.exibirMensagem('Ops!', 'Informe e-mail e senha para entrar!')
+      this.exibirMensagem('Ops!', 'Informe e-mail e senha para entrar.');
     }
 
   }

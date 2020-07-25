@@ -3,11 +3,11 @@ import { Utils } from 'src/app/utils';
 import { LoadingController, AlertController, NavController, MenuController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-novo-vinculo',
+  templateUrl: './novo-vinculo.page.html',
+  styleUrls: ['./novo-vinculo.page.scss'],
 })
-export class HomePage extends Utils implements OnInit {
+export class NovoVinculoPage extends Utils implements OnInit {
 
   constructor(public loadingCtrl: LoadingController,
     public alertCtrl: AlertController,
@@ -15,8 +15,7 @@ export class HomePage extends Utils implements OnInit {
     public menuCtrl: MenuController) {
     super(loadingCtrl, alertCtrl, navCtrl, menuCtrl);
   }
-
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

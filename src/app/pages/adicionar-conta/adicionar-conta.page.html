@@ -1,0 +1,79 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Adicione uma conta bancária</b></h2>
+          <p>A segurança das informações de sua conta bancária está garantida pela Kepma. <b>Você só pode adicionar uma
+              conta bancária que use real brasileiro (R$).</b></p><br>
+          <div class="line"></div>
+        </div>
+
+        <!-- Dados da conta -->
+        <form [formGroup]="form">
+          <ion-label>Pesquisar pelo meu banco</ion-label>
+          <ion-select placeholder="Selecione" name="banco" formControlName="banco">
+            <ion-select-option value="itau">Itaú</ion-select-option>
+            <ion-select-option value="santander">Santander</ion-select-option>
+          </ion-select>
+
+          <ion-label>Número da agência</ion-label>
+          <ion-input type="number" placeholder="Informe o nº do cartão" name="numeroagencia"
+            formControlName="numeroagencia">
+          </ion-input>
+
+          <ion-label>Número da conta (com dígito)</ion-label>
+          <ion-input type="number" placeholder="Informe o vencimento" name="numeroconta" formControlName="numeroconta">
+          </ion-input>
+
+          <ion-label>Tipo de conta</ion-label><br>
+          <ion-radio-group name="tipoconta" formControlName="tipoconta">
+            <ion-radio slot="start" value="cc"></ion-radio>
+            <ion-label>Conta corrente</ion-label>
+
+            <ion-radio slot="start" value="cp"></ion-radio>
+            <ion-label>Conta poupança</ion-label>
+          </ion-radio-group>
+        </form>
+
+        <!-- Card Responsável Conta -->
+        <ion-card class="card-responsavel">
+          <ion-card-content>
+            <ion-button ion-item color="secondary" fill="clear" shape="round" size="small" style="float: right;"
+              (click)="editarResponsavel()">
+              Editar
+            </ion-button>
+
+            <p><b>Nome</b></p>
+            <p>{{nomeRespConta}}</p>
+
+            <p><b>CPF</b></p>
+            <p>{{cpfRespConta}}</p>
+
+          </ion-card-content>
+        </ion-card>
+
+        <div class="lembrete">
+          <p>Certifique-se que suas informações de nome e banco estejam corretas.</p>
+        </div>
+
+        <div style="text-align: center;">
+          <ion-button ion-item color="secondary" fill="solid" shape="round" class="w-270" size="medium"
+            (click)="cadastrarConta()">
+            Criar conta
+          </ion-button>
+          <br>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -15,6 +15,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/cadastro/cadastro.module').then(m => m.CadastroPageModule)
   },
   {
+    path: 'novo-vinculo',
+    loadChildren: () => import('./pages/novo-vinculo/novo-vinculo.module').then(m => m.NovoVinculoPageModule)
+  },
+  {
+    path: 'adicionar-cartao',
+    loadChildren: () => import('./pages/adicionar-cartao/adicionar-cartao.module').then(m => m.AdicionarCartaoPageModule)
+  },
+  {
+    path: 'adicionar-conta',
+    loadChildren: () => import('./pages/adicionar-conta/adicionar-conta.module').then(m => m.AdicionarContaPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'

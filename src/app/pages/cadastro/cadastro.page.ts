@@ -87,20 +87,15 @@ export class CadastroPage extends Utils implements OnInit {
   }
 
   cadastrarUsuario() {
-    this.usuario.nome = this.form.controls.nome.value;
-    this.usuario.email = this.form.controls.email.value;
-
-    if (this.usuario.id) {
-      this.angularFirestore.doc(`profile/${this.usuario.id}`).set(Object.assign({}, this.usuario), { merge: true }).then(() => {
-        this.exibirMensagem('Sucesso!', 'Usuário atualizado com sucesso');
-        this.navCtrl.navigateForward('home');
-      });
+    if (this.form.controls.senha.value === this.form.controls.confirmarsenha.value) {
+      this.fbAuth.createUserWithEmailAndPassword(this.form.controls.email.value, this.form.controls.senha.value)
+        .then((data) => {
+          localStorage.setItem('kepma.user', JSON.stringify(new Usuario('', data.user.email)));
+          this.navCtrl.navigateRoot('home');
+        })
+        .catch((err) => { });
     } else {
-      const newUserProfile = this.angularFirestore.createId();
-      this.angularFirestore.doc(`profile/${newUserProfile}`).set(Object.assign({}, this.usuario)).then(() => {
-        this.exibirMensagem('Sucesso!', 'Usuário cadastrado com sucesso');
-        this.navCtrl.navigateForward('home');
-      });
+      this.exibirMensagem('Ops!', 'As senhas devem ser iguais.');
     }
   }
 

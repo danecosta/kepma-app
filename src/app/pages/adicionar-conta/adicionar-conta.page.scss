@@ -1,11 +1,6 @@
 ion-content {
     --background: #2a2360;
 
-    ion-img {
-        margin: 0 auto;
-        width: 15em;
-    }
-
     h2 {
         font-size: 22px;
         color: #2a2360;
@@ -27,12 +22,18 @@ ion-content {
         font-size: medium;
     }
 
-    ion-input {
+    ion-input,
+    ion-select {
         background-color: #eeeeee;
         color: black;
         max-width: 400px;
         margin: 0 auto;
         border-radius: 20px;
+        margin-bottom: 1em;
+    }
+
+    div.select-icon {
+        margin-right: 10px !important;
     }
 
     form {
@@ -40,20 +41,25 @@ ion-content {
         margin: 0 auto;
     }
 
-    .esqSenha {
-        color: #2a2360;
-        text-align: right;
-        text-decoration: underline;
-        letter-spacing: 0px;
-        opacity: 1;
-        padding: 0.5em 0 1em 0;
-    }
-
     .list-md {
         background: transparent;
     }
 
-    .native-input.sc-ion-input-md {
+    input.native-input.sc-ion-input-md {
         padding-left: 1em !important;
+        margin-left: 1em !important;
+    }
+
+    .card-responsavel {
+        box-shadow: none;
+        background-color: #eeeeee;
+        color: #2a2360;
+        margin: 1em 0;
+    }
+
+    .lembrete {
+        text-align: center;
+        color: #2a2360;
+        padding: 1em;
     }
 }

@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Adicionar um meio de pagamento</b></h2>
+          <div class="line"></div>
+        </div>
+
+        <ion-card class="card-interno" (click)="irPara('adicionar-cartao')">
+          <ion-card-content>
+            <div class="row">
+              <ion-icon name="card-outline" color="primary" class="icone"></ion-icon>
+              <p style="font-size: 16px;"><b>Adicionar um cartão</b></p>
+              <p>Mantenha os dados do seu cartão protegidos ao fazer compras</p>
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card-interno" (click)="irPara('adicionar-conta')">
+          <ion-card-content>
+            <ion-icon name="business-outline" color="primary" class="icone"></ion-icon>
+            <p style="font-size: 16px;"><b>Adicionar uma conta bancária</b></p>
+            <p>Use-as para comprar online ou enviar pagamentos</p>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
