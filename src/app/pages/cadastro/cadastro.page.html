@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card>
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Insira suas informações pessoais para efetuar o cadastro</b></h2>
+          <p>Preencha seus dados</p><br>
+          <div class="line" style="margin: 0 auto;"></div>
+        </div>
+
+        <ion-list lines="none">
+          <form [formGroup]="form">
+
+            <ion-label>Nome completo</ion-label>
+            <ion-input type="text" placeholder="Informe o nome" name="nome" formControlName="nome"></ion-input>
+
+            <ion-label>E-mail</ion-label>
+            <ion-input type="email" placeholder="Informe o e-mail" name="email" formControlName="email">
+            </ion-input>
+
+            <ion-label>Senha</ion-label>
+            <ion-input type="password" placeholder="Informe o senha" name="senha" formControlName="senha"></ion-input>
+
+            <ion-label>Confirmar senha</ion-label>
+            <ion-input type="password" placeholder="Confirme a senha" name="confirmarsenha"
+              formControlName="confirmarsenha">
+            </ion-input>
+
+          </form>
+        </ion-list>
+
+        <div style="text-align: center;">
+          <ion-button ion-item color="secondary" fill="solid" shape="round" class="w-270" size="medium"
+            (click)="cadastrarUsuario()">
+            Criar conta
+          </ion-button>
+          <br>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

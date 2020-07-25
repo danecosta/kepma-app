@@ -1,0 +1,52 @@
+<ion-content>
+
+  <ion-row style="padding: 4em;">
+    <ion-img src="assets/imgs/logo.png"></ion-img>
+  </ion-row>
+
+  <div class="col-sm-12 col-md-4">
+    <ion-card>
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Entrar na Kepma</b></h2>
+          <p>Faça login na sua conta para ter acesso a Kepma</p><br>
+          <div class="line" style="margin: 0 auto;"></div>
+        </div>
+
+        <ion-list lines="none">
+          <form [formGroup]="form">
+
+            <ion-label>E-mail</ion-label>
+            <ion-input type="email" formControlName="email" placeholder="Informe o seu e-mail">
+            </ion-input>
+            <br>
+
+            <ion-label>Senha</ion-label>
+            <ion-input type="password" formControlName="password" placeholder="Informe a sua senha"></ion-input>
+
+            <div class="esqSenha">
+              <p>Esqueceu a senha?</p>
+            </div>
+
+          </form>
+        </ion-list>
+        <br>
+
+        <div style="text-align: center;">
+          <ion-button ion-item color="secondary" fill="solid" shape="round" class="w-270" size="medium"
+            (click)="submit()">
+            Entrar
+          </ion-button>
+          <br>
+
+          <ion-button ion-item color="secondary" fill="outline" shape="round" class="w-270" size="medium"
+            (click)="irPara('cadastro')">
+            Cadastre-se
+          </ion-button>
+          <br><br>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
