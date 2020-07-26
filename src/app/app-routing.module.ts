@@ -43,6 +43,10 @@ const routes: Routes = [
     redirectTo: 'login',
     pathMatch: 'full'
   },
+  {
+    path: 'listar-insights',
+    loadChildren: () => import('./pages/listar-insights/listar-insights.module').then(m => m.ListarInsightsPageModule)
+  },
 ];
 
 @NgModule({

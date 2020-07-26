@@ -58,6 +58,7 @@ export class Utils {
     }
 
     public irPara(paginaDestino) {
+        this.fecharMenu();
         this.navCtrl.navigateForward(paginaDestino);
     }
 

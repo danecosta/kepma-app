@@ -1,17 +1,76 @@
 <ion-app>
 
   <ion-menu side="start" menuId="first" contentId="main">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Kepma</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item (click)="sair()">
-          <ion-icon name="exit-outline" slot="start" color="secondary"></ion-icon> Sair
-        </ion-item>
-      </ion-list>
+
+    <ion-content padding>
+      <ion-row>
+        <ion-avatar>
+          <ion-img src="assets/imgs/ana.png" class="avatar"></ion-img>
+        </ion-avatar>
+        <ion-label class="lbl-avatar">Ana Lúcia Rocha</ion-label>
+      </ion-row>
+      <ion-row>
+        <p class="p-avatar">ana.rocha@gmail.com</p>
+      </ion-row>
+      <div class="line"></div>
+      <ion-row>
+        <ion-col>
+          <ion-card class="card-menu" (click)="irPara('home')">
+            <ion-card-content>
+              <ion-img src="assets/imgs/home.png" class="icone-menu"></ion-img>
+              <ion-text>Home</ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card-menu" (click)="irPara('listar-metas')">
+            <ion-card-content>
+              <ion-img src="assets/imgs/metas.png" class="icone-menu"></ion-img>
+              <ion-text>Suas metas</ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="card-menu" (click)="irPara('listar-extrato')">
+            <ion-card-content>
+              <ion-img src="assets/imgs/extrato.png" class="icone-menu"></ion-img>
+              <p><b>Seu extrato</b></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card-menu" (click)="irPara('listar-financiamento')">
+            <ion-card-content>
+              <ion-img src="assets/imgs/financiamento.png" class="icone-menu" style="margin-top: 10px;"></ion-img>
+              <p><b>Financiamento</b></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="card-menu" (click)="irPara('listar-insights')">
+            <ion-card-content>
+              <ion-img src="assets/imgs/insights.png" class="icone-menu2"></ion-img>
+              <p><b>Insights</b></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card-menu" (click)="irPara('listar-pagamentos')">
+            <ion-card-content>
+              <ion-img src="assets/imgs/pagamento.png" class="icone-menu"></ion-img>
+              <p><b>Pagamento</b></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-item (click)="sair()">
+        <ion-icon name="exit-outline" slot="start" color="secondary"></ion-icon> Sair
+      </ion-item>
     </ion-content>
   </ion-menu>
 

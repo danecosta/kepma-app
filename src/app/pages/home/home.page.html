@@ -19,7 +19,7 @@
     <ion-card class="card-principal">
         <ion-card-content>
             <ion-grid>
-                <ion-row>
+                <ion-row style="margin-bottom: 1em;">
                     <ion-col size="4">
                         <canvas #chartTotalConta></canvas>
                         <p style="text-align: center;">75%</p>
@@ -31,12 +31,22 @@
                     </ion-col>
                 </ion-row>
 
+                <div class="line"></div>
+
                 <!-- Insights -->
                 <ion-row style="padding-left: 10px;">
-                    <h3>Insights</h3>
+                    <ion-col size="9">
+                        <h3>Insights</h3>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button ion-item color="primary" fill="outline" shape="round" size="small"
+                            (click)="irPara('listar-insights')">
+                            Todos
+                        </ion-button>
+                    </ion-col>
                 </ion-row>
                 <ion-row style="padding-left: 10px;">
-                    <p>Veja os resultados das suas metas</p>
+                    <p>Veja como potencializar seus resultados</p>
                 </ion-row>
 
                 <ion-row>

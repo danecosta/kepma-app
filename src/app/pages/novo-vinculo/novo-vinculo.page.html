@@ -18,19 +18,29 @@
 
         <ion-card class="card-interno" (click)="irPara('adicionar-cartao')">
           <ion-card-content>
-            <div class="row">
-              <ion-icon name="card-outline" color="primary" class="icone"></ion-icon>
-              <p style="font-size: 16px;"><b>Adicionar um cartão</b></p>
-              <p>Mantenha os dados do seu cartão protegidos ao fazer compras</p>
-            </div>
+            <ion-row>
+              <ion-col size="3">
+                <ion-img src="assets/imgs/pay.png" class="icone-vinculo"></ion-img>
+              </ion-col>
+              <ion-col>
+                <p style="font-size: 16px;"><b>Adicionar um cartão</b></p>
+                <p>Mantenha os dados do seu cartão protegidos ao fazer compras</p>
+              </ion-col>
+            </ion-row>
           </ion-card-content>
         </ion-card>
 
         <ion-card class="card-interno" (click)="irPara('adicionar-conta')">
           <ion-card-content>
-            <ion-icon name="business-outline" color="primary" class="icone"></ion-icon>
-            <p style="font-size: 16px;"><b>Adicionar uma conta bancária</b></p>
-            <p>Use-as para comprar online ou enviar pagamentos</p>
+            <ion-row>
+              <ion-col size="3">
+                <ion-img src="assets/imgs/bank.png" class="icone-vinculo2"></ion-img>
+              </ion-col>
+              <ion-col>
+                <p style="font-size: 16px;"><b>Adicionar uma conta bancária</b></p>
+                <p>Use-as para comprar online ou enviar pagamentos</p>
+              </ion-col>
+            </ion-row>
           </ion-card-content>
         </ion-card>
 
