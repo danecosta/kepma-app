@@ -72,12 +72,12 @@ export class Utils {
     }
 
     public abrirMenu() {
-        this.menuCtrl.open('end');
+        this.menuCtrl.open('start');
         this.menuAberto = true;
     }
 
     public fecharMenu() {
-        this.menuCtrl.close('end');
+        this.menuCtrl.close('start');
         this.menuAberto = false;
     }
 }

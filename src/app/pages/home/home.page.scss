@@ -24,7 +24,7 @@ ion-content {
         text-align: center;
     }
 
-    .icone-calendar {
+    .icone-metas {
         font-size: 18px;
         text-align: center;
         color: #2a2360;
@@ -61,7 +61,12 @@ ion-content {
 
     .card-insights {
         text-align: center;
-        min-height: 92px;
+        height: 90px;
+    }
+
+    .card-metas {
+        text-align: center;
+        min-height: 100px;
     }
 
     .categoria {
