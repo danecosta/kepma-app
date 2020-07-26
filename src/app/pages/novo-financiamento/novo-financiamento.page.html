@@ -1,0 +1,94 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Simule um financiamento</b></h2>
+          <p>Veja as opções que os bancos podem propor para você</p><br>
+          <div class="line"></div>
+        </div>
+
+        <ion-list lines="none">
+          <form [formGroup]="form">
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Valor do empréstimo</ion-label>
+                <ion-input type="text" placeholder="R$0,00" name="valor" formControlName="valor">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Data de nascimento</ion-label>
+                <ion-input type="number" placeholder="00/00/0000" name="datanascimento"
+                  formControlName="datanascimento">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>CEP</ion-label>
+                <ion-input type="number" placeholder="00000-000" name="cep" formControlName="cep">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Profissão</ion-label>
+                <ion-select placeholder="Selecione" name="profissao" formControlName="profissao">
+                  <ion-select-option value="analista">Analista</ion-select-option>
+                  <ion-select-option value="costureiro">Costureiro(a)</ion-select-option>
+                  <ion-select-option value="domestica">Empregada doméstica</ion-select-option>
+                  <ion-select-option value="estudante">Estudante</ion-select-option>
+                  <ion-select-option value="medico">Médico(a)</ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Motivo do empréstimo</ion-label>
+                <ion-select placeholder="Selecione" name="motivo" formControlName="motivo">
+                  <ion-select-option value="imovel">Compra de imóvel</ion-select-option>
+                  <ion-select-option value="veiculo">Compra de veículo</ion-select-option>
+                  <ion-select-option value="reforma">Reforma</ion-select-option>
+                  <ion-select-option value="outro">Outro</ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Celular</ion-label>
+                <ion-input type="number" placeholder="(00) 00000-0000" name="celular" formControlName="celular">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+
+          </form>
+        </ion-list>
+
+        <div style="text-align: center;">
+          <ion-button ion-item color="secondary" fill="solid" shape="round" class="w-270" size="medium"
+            (click)="irPara('listar-financiamentos')">
+            Ver opções
+          </ion-button>
+          <br>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,51 @@
+ion-content {
+    --background: #2a2360;
+
+    h2 {
+        font-size: 22px;
+        color: #2a2360;
+    }
+
+    ion-title {
+        text-align: center;
+    }
+
+    .icone-extrato {
+        border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .div-extrato-credito {
+        background: #52e28c 0% 0% no-repeat padding-box;
+        width: 40px;
+        height: 40px;
+    }
+
+    .div-extrato-debito {
+        background: #e05353 0% 0% no-repeat padding-box;
+        width: 40px;
+        height: 40px;
+    }
+
+    .acao-extrato {
+        color: #2a2360;
+    }
+
+    .seta-extrato {
+        text-align: right;
+        padding-top: 15px;
+    }
+
+    ion-input,
+    ion-select {
+        background-color: #eeeeee;
+        color: black;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 20px;
+        margin-bottom: 1em;
+    }
+}

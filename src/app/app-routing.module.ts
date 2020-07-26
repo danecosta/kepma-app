@@ -39,13 +39,25 @@ const routes: Routes = [
     loadChildren: () => import('./pages/adicionar-objetivo/adicionar-objetivo.module').then(m => m.AdicionarObjetivoPageModule)
   },
   {
+    path: 'listar-insights',
+    loadChildren: () => import('./pages/listar-insights/listar-insights.module').then(m => m.ListarInsightsPageModule)
+  },
+  {
+    path: 'novo-financiamento',
+    loadChildren: () => import('./pages/novo-financiamento/novo-financiamento.module').then(m => m.NovoFinanciamentoPageModule)
+  },
+  {
+    path: 'listar-financiamentos',
+    loadChildren: () => import('./pages/listar-financiamentos/listar-financiamentos.module').then(m => m.ListarFinanciamentosPageModule)
+  },
+  {
+    path: 'listar-extrato',
+    loadChildren: () => import('./pages/listar-extrato/listar-extrato.module').then(m => m.ListarExtratoPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
-  },
-  {
-    path: 'listar-insights',
-    loadChildren: () => import('./pages/listar-insights/listar-insights.module').then(m => m.ListarInsightsPageModule)
   },
 ];
 

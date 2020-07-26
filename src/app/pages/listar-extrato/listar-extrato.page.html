@@ -1,0 +1,159 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Seu extrato</b></h2>
+          <p>Gestão financeira dos seus gastos</p>
+          <div class="line"></div>
+        </div>
+
+        <ion-row>
+          <ion-col>
+            <ion-select placeholder="Últimos 6 meses" name="categoria" [(ngModel)]="periodo">
+              <ion-select-option value="transacoes">Últimas transações</ion-select-option>
+              <ion-select-option value="mes">Último mês</ion-select-option>
+              <ion-select-option value="semestre">Últimos 6 meses</ion-select-option>
+            </ion-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-select placeholder="Todos os tipos" name="categoria" [(ngModel)]="tipo">
+              <ion-select-option value="saque">Saque</ion-select-option>
+              <ion-select-option value="deposito">Depósito</ion-select-option>
+              <ion-select-option value="transferencia">Transferência</ion-select-option>
+            </ion-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-card style="margin: 0;">
+              <ion-card-content style="padding: 0;">
+                <ion-row>
+                  <ion-col size="2">
+                    <div class="div-extrato-credito">
+                      <ion-img src="assets/imgs/coin.png" class="icone-extrato"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="acao-extrato">Depósito | <b>R$590,00</b></p>
+                    <p><b>Nubank</b> | 23/03/2020</p>
+                  </ion-col>
+                  <ion-col size="2" class="seta-extrato">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-card style="margin: 0;">
+              <ion-card-content style="padding: 0;">
+                <ion-row>
+                  <ion-col size="2">
+                    <div class="div-extrato-debito">
+                      <ion-img src="assets/imgs/money.png" class="icone-extrato"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="acao-extrato">Saque | <b>R$-290,00</b></p>
+                    <p><b>Nubank</b> | 21/03/2020</p>
+                  </ion-col>
+                  <ion-col size="2" class="seta-extrato">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-card style="margin: 0;">
+              <ion-card-content style="padding: 0;">
+                <ion-row>
+                  <ion-col size="2">
+                    <div class="div-extrato-credito">
+                      <ion-img src="assets/imgs/coin.png" class="icone-extrato"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="acao-extrato">Depósito | <b>R$100,00</b></p>
+                    <p><b>Nubank</b> | 10/03/2020</p>
+                  </ion-col>
+                  <ion-col size="2" class="seta-extrato">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-card style="margin: 0;">
+              <ion-card-content style="padding: 0;">
+                <ion-row>
+                  <ion-col size="2">
+                    <div class="div-extrato-credito">
+                      <ion-img src="assets/imgs/coin.png" class="icone-extrato"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="acao-extrato">Depósito | <b>R$900,00</b></p>
+                    <p><b>Nubank</b> | 07/03/2020</p>
+                  </ion-col>
+                  <ion-col size="2" class="seta-extrato">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-card style="margin: 0;">
+              <ion-card-content style="padding: 0;">
+                <ion-row>
+                  <ion-col size="2">
+                    <div class="div-extrato-debito">
+                      <ion-img src="assets/imgs/money.png" class="icone-extrato"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="acao-extrato">Saque | <b>R$-1000,00</b></p>
+                    <p><b>Nubank</b> | 01/03/2020</p>
+                  </ion-col>
+                  <ion-col size="2" class="seta-extrato">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
