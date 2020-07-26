@@ -15,6 +15,7 @@ export class NovoVinculoPage extends Utils implements OnInit {
     public menuCtrl: MenuController) {
     super(loadingCtrl, alertCtrl, navCtrl, menuCtrl);
   }
+
   ngOnInit() {
   }
 

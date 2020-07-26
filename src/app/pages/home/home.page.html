@@ -74,7 +74,15 @@
 
                 <!-- Metas -->
                 <ion-row style="padding-left: 10px;">
-                    <h3>Minhas metas</h3>
+                    <ion-col size="9">
+                        <h3>Minhas metas</h3>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button ion-item color="primary" fill="outline" shape="round" size="small"
+                            (click)="irPara('listar-metas')">
+                            Todas
+                        </ion-button>
+                    </ion-col>
                 </ion-row>
                 <ion-row style="padding-left: 10px;">
                     <p>Veja os resultados das suas metas</p>
@@ -90,7 +98,8 @@
                                         <p>75%</p>
                                     </ion-col>
                                     <ion-col size="2">
-                                        <ion-icon name="star-outline" class="icone-metas"></ion-icon>
+                                        <ion-icon name="star-outline" class="icone-metas icone-favorito">
+                                        </ion-icon>
                                     </ion-col>
                                     <ion-col size="1">
                                         <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
@@ -134,7 +143,7 @@
                                         <p>50%</p>
                                     </ion-col>
                                     <ion-col size="2">
-                                        <ion-icon name="star-outline" class="icone-metas"></ion-icon>
+                                        <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
                                     </ion-col>
                                     <ion-col size="1">
                                         <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>

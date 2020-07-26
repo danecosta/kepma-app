@@ -27,6 +27,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/adicionar-conta/adicionar-conta.module').then(m => m.AdicionarContaPageModule)
   },
   {
+    path: 'listar-metas',
+    loadChildren: () => import('./pages/listar-metas/listar-metas.module').then(m => m.ListarMetasPageModule)
+  },
+  {
+    path: 'adicionar-meta',
+    loadChildren: () => import('./pages/adicionar-meta/adicionar-meta.module').then(m => m.AdicionarMetaPageModule)
+  },
+  {
+    path: 'adicionar-objetivo',
+    loadChildren: () => import('./pages/adicionar-objetivo/adicionar-objetivo.module').then(m => m.AdicionarObjetivoPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'

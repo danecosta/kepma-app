@@ -6,6 +6,11 @@ ion-content {
         color: #2a2360;
     }
 
+    h3 {
+        font-size: 18px;
+        color: #2a2360;
+    }
+
     ion-label {
         margin: 0 auto;
         word-break: break-word;
@@ -17,7 +22,8 @@ ion-content {
         padding-left: 15px;
     }
 
-    ion-input {
+    ion-input,
+    ion-select {
         background-color: #eeeeee;
         color: black;
         max-width: 400px;

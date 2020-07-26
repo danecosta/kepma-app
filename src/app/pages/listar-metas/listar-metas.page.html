@@ -1,0 +1,300 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4">
+              <canvas #chartMetaPrincipal></canvas>
+              <p style="text-align: center;">75%</p>
+            </ion-col>
+            <ion-col size="6">
+              <p class="categoria-principal">Casal</p>
+              <h2><b>R$40.000,00</b></h2>
+              <p>Festa de casamento</p>
+              <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+              <ion-text>&nbsp;Acaba em 3 meses</ion-text>
+            </ion-col>
+            <ion-col size="1">
+              <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
+            </ion-col>
+            <ion-col size="1">
+              <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-row style="padding-top: 10px;">
+            <ion-col size="8">
+              <ion-text>Última atualização: 25/07/2020</ion-text>
+            </ion-col>
+            <ion-col size="3">
+              <ion-button ion-item color="primary" fill="solid" shape="round" size="small" class="btnVer">
+                Ver
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-button ion-item color="secondary" fill="solid" shape="round" size="medium"
+                (click)="irPara('adicionar-meta')" class="btnNovaMeta">
+                Criar meta
+              </ion-button>
+            </ion-col>
+          </ion-row>
+
+          <!-- Metas Favoritas-->
+          <ion-row style="padding-left: 10px;">
+            <ion-col size="9">
+              <h3>Metas Favoritas</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row style="padding-left: 10px;">
+            <p>Veja os resultados das suas metas</p>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="6">
+              <ion-card class="card-metas">
+                <ion-card-content>
+                  <ion-row>
+                    <ion-col size="9">
+                      <canvas #chartMeta1></canvas>
+                      <p>75%</p>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
+                    </ion-col>
+                    <ion-col size="1">
+                      <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <p class="categoria">Casal</p>
+                  </ion-row>
+                  <ion-row>
+                    <h3>R$40.000,00</h3>
+                  </ion-row>
+                  <ion-row>
+                    <p>Festa de casamento</p>
+                  </ion-row>
+
+                  <div class="line-card"></div>
+
+                  <ion-row style="padding-top: 10px;">
+                    <ion-col size="1">
+                      <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                    <ion-col size="8">
+                      <ion-text>3 meses</ion-text>
+                    </ion-col>
+                    <ion-col size="3">
+                      <ion-button ion-item color="primary" fill="solid" shape="round" size="small" class="btnVer">
+                        Ver
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card class="card-metas">
+                <ion-card-content>
+                  <ion-row>
+                    <ion-col size="9">
+                      <canvas #chartMeta2></canvas>
+                      <p>50%</p>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
+                    </ion-col>
+                    <ion-col size="1">
+                      <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <p class="categoria">Familia</p>
+                  </ion-row>
+                  <ion-row>
+                    <h3>R$8.000,00</h3>
+                  </ion-row>
+                  <ion-row>
+                    <p>Reforma da cozinha</p>
+                  </ion-row>
+
+                  <div class="line-card"></div>
+
+                  <ion-row style="padding-top: 10px;">
+                    <ion-col size="1">
+                      <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                    <ion-col size="8">
+                      <ion-text>24 dias</ion-text>
+                    </ion-col>
+                    <ion-col size="3">
+                      <ion-button ion-item color="primary" fill="solid" shape="round" size="small" class="btnVer">
+                        Ver
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+
+          <!-- Suas metas-->
+          <ion-row style="padding-left: 10px;">
+            <ion-col size="9">
+              <h3>Suas metas</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row style="padding-left: 10px;">
+            <p>Confira todos os seus projetos</p>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="6">
+              <ion-card class="card-metas">
+                <ion-card-content>
+                  <ion-row>
+                    <ion-col size="9">
+                      <canvas #chartMeta5></canvas>
+                      <p>75%</p>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-icon name="star-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                    <ion-col size="1">
+                      <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <p class="categoria">Pessoal</p>
+                  </ion-row>
+                  <ion-row>
+                    <h3>R$12.000,00</h3>
+                  </ion-row>
+                  <ion-row>
+                    <p>Comprar uma moto</p>
+                  </ion-row>
+
+                  <div class="line-card"></div>
+
+                  <ion-row style="padding-top: 10px;">
+                    <ion-col size="1">
+                      <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                    <ion-col size="8">
+                      <ion-text>3 meses</ion-text>
+                    </ion-col>
+                    <ion-col size="3">
+                      <ion-button ion-item color="primary" fill="solid" shape="round" size="small" class="btnVer">
+                        Ver
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-card class="card-metas">
+                <ion-card-content>
+                  <ion-row>
+                    <ion-col size="9">
+                      <canvas #chartMeta3></canvas>
+                      <p>75%</p>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
+                    </ion-col>
+                    <ion-col size="1">
+                      <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <p class="categoria">Casal</p>
+                  </ion-row>
+                  <ion-row>
+                    <h3>R$40.000,00</h3>
+                  </ion-row>
+                  <ion-row>
+                    <p>Festa de casamento</p>
+                  </ion-row>
+
+                  <div class="line-card"></div>
+
+                  <ion-row style="padding-top: 10px;">
+                    <ion-col size="1">
+                      <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                    <ion-col size="8">
+                      <ion-text>3 meses</ion-text>
+                    </ion-col>
+                    <ion-col size="3">
+                      <ion-button ion-item color="primary" fill="solid" shape="round" size="small" class="btnVer">
+                        Ver
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="6">
+              <ion-card class="card-metas">
+                <ion-card-content>
+                  <ion-row>
+                    <ion-col size="9">
+                      <canvas #chartMeta4></canvas>
+                      <p>50%</p>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
+                    </ion-col>
+                    <ion-col size="1">
+                      <ion-icon name="ellipsis-vertical-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <p class="categoria">Familia</p>
+                  </ion-row>
+                  <ion-row>
+                    <h3>R$8.000,00</h3>
+                  </ion-row>
+                  <ion-row>
+                    <p>Reforma da cozinha</p>
+                  </ion-row>
+
+                  <div class="line-card"></div>
+
+                  <ion-row style="padding-top: 10px;">
+                    <ion-col size="1">
+                      <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+                    </ion-col>
+                    <ion-col size="8">
+                      <ion-text>24 dias</ion-text>
+                    </ion-col>
+                    <ion-col size="3">
+                      <ion-button ion-item color="primary" fill="solid" shape="round" size="small" class="btnVer">
+                        Ver
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

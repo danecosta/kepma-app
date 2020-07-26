@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+
+        <div class="titulo">
+          <h2><b>Criar objetivo</b></h2>
+          <p>Crie seus objetivos</p><br>
+          <div class="line"></div>
+        </div>
+
+        <ion-list lines="none">
+          <form [formGroup]="form">
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Nome do objetivo</ion-label>
+                <ion-input type="text" placeholder="Informe um nome para o objetivo" name="nomeobjetivo"
+                  formControlName="nomeobjetivo">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Valor do objetivo</ion-label>
+                <ion-input type="number" placeholder="Informe um valor para o objetivo" name="valorobjetivo"
+                  formControlName="valorobjetivo">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-label>Periodicidade</ion-label>
+                <ion-select placeholder="Selecione" name="periodicidade" formControlName="periodicidade">
+                  <ion-select-option value="dia">dia</ion-select-option>
+                  <ion-select-option value="semana">semana</ion-select-option>
+                  <ion-select-option value="mes">mês</ion-select-option>
+                  <ion-select-option value="semestre">semestre</ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+
+          </form>
+        </ion-list>
+
+        <div style="text-align: center;">
+          <ion-button ion-item color="secondary" fill="solid" shape="round" class="w-270" size="medium"
+            (click)="cadastrarObjetivo()">
+            Criar objetivo
+          </ion-button>
+          <br>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

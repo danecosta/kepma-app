@@ -2,7 +2,7 @@ ion-content {
     --background: #2a2360;
 
     h2 {
-        font-size: 34px;
+        font-size: 30px;
         color: #2a2360;
     }
 
@@ -37,35 +37,22 @@ ion-content {
         padding-top: 10px;
     }
 
-    .div-extrato-credito {
-        background: #52e28c 0% 0% no-repeat padding-box;
-        width: 40px;
-        height: 40px;
-    }
-
-    .div-extrato-debito {
-        background: #e05353 0% 0% no-repeat padding-box;
-        width: 40px;
-        height: 40px;
-    }
-
-    .acao-extrato {
-        color: #2a2360;
-    }
-
-    .seta-extrato {
-        text-align: right;
-        padding-top: 15px;
-    }
-
-    .card-insights {
-        text-align: center;
-        height: 90px;
-    }
-
     .card-metas {
         text-align: center;
         min-height: 100px;
+    }
+
+    .categoria-principal {
+        border: 1px solid #2a2360;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #2a2360;
+        text-transform: uppercase;
+        padding: 2px;
+        opacity: 1;
+        width: 60px;
     }
 
     .categoria {
@@ -88,5 +75,11 @@ ion-content {
     .btnVer {
         float: right;
         font-size: 10px;
+    }
+
+    .btnNovaMeta {
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }

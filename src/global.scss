@@ -44,6 +44,11 @@ ion-card.card-principal {
     margin: 0;
 }
 
+ion-button.w-270 {
+    width: 270px;
+    font-size: medium;
+}
+
 .card-content-md p {
     font-size: 14px;
 }
@@ -57,4 +62,8 @@ ion-card.card-principal {
     border-radius: 4px;
     opacity: 1;
     margin: 1em auto;
+}
+
+.icone-favorito {
+    color: gold;
 }
