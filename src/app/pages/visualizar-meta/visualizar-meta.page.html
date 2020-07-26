@@ -1,0 +1,76 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="col-sm-12 col-md-4">
+    <ion-card class="card-principal">
+      <ion-card-content>
+        <ion-grid>
+
+          <ion-row>
+            <ion-col size="12">
+              <canvas #chartMetaPrincipal></canvas>
+              <p class="descricao">75%</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="12">
+              <p class="categoria-principal">Casal</p>
+              <h2><b>R$40.000,00</b></h2>
+              <p class="descricao">Festa de casamento</p>
+              <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
+              <ion-text>&nbsp;Acaba em 3 meses</ion-text>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="12">
+              <ion-button ion-item color="secondary" fill="outline" shape="round" size="medium"
+                (click)="irPara('listar-financiamentos')" style="margin: 0 auto;">
+                Ver opções de financiamento
+              </ion-button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="12">
+              <canvas #chartEvolucao></canvas>
+            </ion-col>
+          </ion-row>
+
+          <ion-row style="padding-left: 10px;">
+            <ion-col size="12" style="text-align: left;">
+              <h3><b>Objetivos</b></h3>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="1">
+              <ion-checkbox color="warning" checked="true"></ion-checkbox>
+            </ion-col>
+            <ion-col style="text-align: left;">
+              <h4>Guardar R$500 por mês</h4>
+              <p>Concluído quinta-feira, 23/04/2020 16:35h</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="1">
+              <ion-checkbox color="warning"></ion-checkbox>
+            </ion-col>
+            <ion-col style="text-align: left;">
+              <h4>Guardar R$1000 do 13º</h4>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

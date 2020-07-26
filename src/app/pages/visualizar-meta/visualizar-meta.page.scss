@@ -1,0 +1,48 @@
+ion-content {
+    --background: #2a2360;
+
+    ion-row,
+    ion-col {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 34px;
+        color: #2a2360;
+    }
+
+    h3 {
+        font-size: 22px;
+        color: #2a2360;
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: #2a2360;
+        text-align: left;
+    }
+
+    ion-title {
+        text-align: center;
+    }
+
+    .categoria-principal {
+        border: 1px solid #2a2360;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #2a2360;
+        text-transform: uppercase;
+        padding: 2px;
+        opacity: 1;
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    .descricao {
+        font-size: 22px;
+    }
+}

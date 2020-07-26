@@ -59,6 +59,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/listar-meios-pagamento/listar-meios-pagamento.module').then(m => m.ListarMeiosPagamentoPageModule)
   },
   {
+    path: 'visualizar-meta',
+    loadChildren: () => import('./pages/visualizar-meta/visualizar-meta.module').then(m => m.VisualizarMetaPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
