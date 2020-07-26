@@ -55,6 +55,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/listar-extrato/listar-extrato.module').then(m => m.ListarExtratoPageModule)
   },
   {
+    path: 'listar-meios-pagamento',
+    loadChildren: () => import('./pages/listar-meios-pagamento/listar-meios-pagamento.module').then(m => m.ListarMeiosPagamentoPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
