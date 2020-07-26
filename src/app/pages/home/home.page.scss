@@ -2,11 +2,88 @@ ion-content {
     --background: #2a2360;
 
     h2 {
+        font-size: 34px;
+        color: #2a2360;
+    }
+
+    h3 {
         font-size: 22px;
         color: #2a2360;
     }
 
     ion-title {
+        text-align: center !important;
+    }
+
+    ion-card-content {
+        padding: 1em;
+    }
+
+    .icone-chart {
+        font-size: 68px;
         text-align: center;
+    }
+
+    .icone-calendar {
+        font-size: 18px;
+        text-align: center;
+        color: #2a2360;
+    }
+
+    .icone-extrato {
+        border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .div-extrato-credito {
+        background: #52e28c 0% 0% no-repeat padding-box;
+        width: 40px;
+        height: 40px;
+    }
+
+    .div-extrato-debito {
+        background: #e05353 0% 0% no-repeat padding-box;
+        width: 40px;
+        height: 40px;
+    }
+
+    .acao-extrato {
+        color: #2a2360;
+    }
+
+    .seta-extrato {
+        text-align: right;
+        padding-top: 15px;
+    }
+
+    .card-insights {
+        text-align: center;
+        min-height: 92px;
+    }
+
+    .categoria {
+        border: 1px solid var(--unnamed-color-2a2360);
+        border: 1px solid #2a2360;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 0px;
+        color: #2a2360;
+        text-transform: uppercase;
+        padding: 2px;
+        opacity: 1;
+    }
+
+    .line-card {
+        border: 1px solid #eeeeee;
+        opacity: 1;
+    }
+
+    .btnVer {
+        float: right;
+        font-size: 10px;
     }
 }
