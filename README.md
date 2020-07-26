@@ -39,6 +39,16 @@ git clone https://github.com/danecosta/kepma-app.git
 npm install
 ```
 
+**Clonando e executando o backend em outra IDE:**
+
+```bash 	 
+git clone https://github.com/danecosta/kepma-api
+```
+
+```bash 	 
+node index.js
+```
+
 **Executando o aplicativo no navegador**
 
 ``` bash
