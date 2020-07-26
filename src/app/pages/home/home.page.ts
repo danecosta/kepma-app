@@ -54,7 +54,7 @@ export class HomePage extends Utils implements OnInit {
 
   createChartMeta1() {
     let ctx = this.chartMeta1.nativeElement;
-    ctx.height = 100;
+    ctx.height = 250;
 
     this.bars = new Chart(ctx, {
       type: 'doughnut',
@@ -73,7 +73,7 @@ export class HomePage extends Utils implements OnInit {
 
   createChartMeta2() {
     let ctx = this.chartMeta2.nativeElement;
-    ctx.height = 100;
+    ctx.height = 250;
 
     this.bars = new Chart(ctx, {
       type: 'doughnut',
