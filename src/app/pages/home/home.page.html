@@ -192,10 +192,16 @@
 
                 <!-- Extrato -->
                 <ion-row style="padding-left: 10px;">
-                    <h3>Meu extrato</h3>
-                </ion-row>
-                <ion-row style="padding-left: 10px;">
-                    <p>Gestão financeira dos seus gastos.</p>
+                    <ion-col size="9">
+                        <h3>Meu extrato</h3>
+                        <p>Gestão financeira dos seus gastos.</p>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button ion-item color="primary" fill="outline" shape="round" size="small"
+                            (click)="irPara('listar-extrato')">
+                            Todos
+                        </ion-button>
+                    </ion-col>
                 </ion-row>
 
                 <ion-row>
