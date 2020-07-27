@@ -36,25 +36,25 @@
         </ion-segment>
 
         <div *ngIf="abaSelecionada == 'contas'">
-          <ion-row>
+          <ion-row *ngFor="let item of contas">
             <ion-col size="12">
               <ion-card style="margin: 0 auto;">
                 <ion-card-content style="padding: 0;">
                   <ion-row>
                     <ion-col size="3">
                       <ion-avatar>
-                        <ion-img src="assets/imgs/itau.png" class="avatar"></ion-img>
+                        <ion-img [src]="carregarLogo(item.banco)" class="avatar"></ion-img>
                       </ion-avatar>
                     </ion-col>
                     <ion-col size="6">
                       <ion-row>
-                        <h3>Conta 12345-6</h3>
+                        <h3>Conta {{ item.numero_conta }}</h3>
                       </ion-row>
                       <ion-row>
-                        <ion-text>Itaú</ion-text>
+                        <ion-text>{{ item.banco }}</ion-text>
                       </ion-row>
                       <ion-row>
-                        <ion-text>Adicionado em: 21/01/2020</ion-text>
+                        <ion-text>Adicionado em: {{ item.created_at.toDate() | date :  "dd/MM/yyyy" }}</ion-text>
                       </ion-row>
                     </ion-col>
                     <ion-col size="3">

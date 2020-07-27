@@ -35,7 +35,7 @@
 
                 <!-- Insights -->
                 <ion-row style="padding-left: 10px;">
-                    <ion-col size="9">
+                    <ion-col size="8">
                         <h3>Insights</h3>
                     </ion-col>
                     <ion-col>
@@ -84,7 +84,7 @@
 
                 <!-- Metas -->
                 <ion-row style="padding-left: 10px;">
-                    <ion-col size="9">
+                    <ion-col size="8">
                         <h3>Minhas metas</h3>
                     </ion-col>
                     <ion-col>
@@ -101,13 +101,13 @@
                 <ion-row>
                     <ion-col size="6">
                         <ion-card class="card-metas">
-                            <ion-card-content>
+                            <ion-card-content style="padding: 0.5em;">
                                 <ion-row>
                                     <ion-col size="9">
                                         <canvas #chartMeta1></canvas>
                                         <p>75%</p>
                                     </ion-col>
-                                    <ion-col size="2">
+                                    <ion-col size="1">
                                         <ion-icon name="star-outline" class="icone-metas icone-favorito">
                                         </ion-icon>
                                     </ion-col>
@@ -128,12 +128,16 @@
                                 <div class="line-card"></div>
 
                                 <ion-row style="padding-top: 10px;">
-                                    <ion-col size="1">
+                                    <ion-col size="2">
                                         <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
                                     </ion-col>
-                                    <ion-col size="8">
+                                    <ion-col>
                                         <ion-text>3 meses</ion-text>
                                     </ion-col>
+                                </ion-row>
+
+                                <ion-row>
+                                    <ion-col></ion-col>
                                     <ion-col size="3">
                                         <ion-button ion-item color="primary" fill="solid" shape="round" size="small"
                                             class="btnVer" (click)="irPara('visualizar-meta')">
@@ -141,18 +145,19 @@
                                         </ion-button>
                                     </ion-col>
                                 </ion-row>
+
                             </ion-card-content>
                         </ion-card>
                     </ion-col>
                     <ion-col size="6">
                         <ion-card class="card-metas">
-                            <ion-card-content>
+                            <ion-card-content style="padding: 0.5em;">
                                 <ion-row>
                                     <ion-col size="9">
                                         <canvas #chartMeta2></canvas>
                                         <p>50%</p>
                                     </ion-col>
-                                    <ion-col size="2">
+                                    <ion-col size="1">
                                         <ion-icon name="star-outline" class="icone-metas icone-favorito"></ion-icon>
                                     </ion-col>
                                     <ion-col size="1">
@@ -172,12 +177,16 @@
                                 <div class="line-card"></div>
 
                                 <ion-row style="padding-top: 10px;">
-                                    <ion-col size="1">
+                                    <ion-col size="2">
                                         <ion-icon name="calendar-outline" class="icone-metas"></ion-icon>
                                     </ion-col>
-                                    <ion-col size="8">
+                                    <ion-col>
                                         <ion-text>24 dias</ion-text>
                                     </ion-col>
+                                </ion-row>
+
+                                <ion-row>
+                                    <ion-col></ion-col>
                                     <ion-col size="3">
                                         <ion-button ion-item color="primary" fill="solid" shape="round" size="small"
                                             class="btnVer" (click)="irPara('visualizar-meta')">
@@ -192,7 +201,7 @@
 
                 <!-- Extrato -->
                 <ion-row style="padding-left: 10px;">
-                    <ion-col size="9">
+                    <ion-col size="8">
                         <h3>Meu extrato</h3>
                         <p>Gestão financeira dos seus gastos.</p>
                     </ion-col>

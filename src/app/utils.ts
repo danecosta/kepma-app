@@ -8,7 +8,7 @@ export class Utils {
     alert: AlertController;
 
     options: InAppBrowserOptions = {
-        location: 'no', // Or 'yes'
+        location: 'yes', // Or 'yes'
         hidden: 'no', // Or  'yes'
         clearcache: 'yes',
         clearsessioncache: 'yes',

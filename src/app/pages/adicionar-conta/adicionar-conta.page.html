@@ -27,12 +27,11 @@
           </ion-select>
 
           <ion-label>Número da agência</ion-label>
-          <ion-input type="number" placeholder="Informe o nº do cartão" name="numeroagencia"
-            formControlName="numeroagencia">
+          <ion-input type="number" placeholder="Informe a agência" name="numeroagencia" formControlName="numeroagencia">
           </ion-input>
 
           <ion-label>Número da conta (com dígito)</ion-label>
-          <ion-input type="number" placeholder="Informe o vencimento" name="numeroconta" formControlName="numeroconta">
+          <ion-input type="number" placeholder="Informe o nº da conta" name="numeroconta" formControlName="numeroconta">
           </ion-input>
 
           <ion-label>Tipo de conta</ion-label><br>
@@ -68,7 +67,7 @@
 
         <div style="text-align: center;">
           <ion-button ion-item color="secondary" fill="solid" shape="round" class="w-270" size="medium"
-            (click)="cadastrarConta()">
+            (click)="realizarRequisicao()">
             Vincular conta bancária
           </ion-button>
           <br>

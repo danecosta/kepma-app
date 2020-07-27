@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { AdicionarContaPageRoutingModule } from './adicionar-conta-routing.module';
 
 import { AdicionarContaPage } from './adicionar-conta.page';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @NgModule({
   imports: [
@@ -16,6 +17,8 @@ import { AdicionarContaPage } from './adicionar-conta.page';
     ReactiveFormsModule,
     AdicionarContaPageRoutingModule
   ],
-  declarations: [AdicionarContaPage]
+  declarations: [AdicionarContaPage],
+  providers: [InAppBrowser]
 })
+
 export class AdicionarContaPageModule { }

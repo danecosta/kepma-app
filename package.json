@@ -1,7 +1,7 @@
 {
   "name": "kepma-app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Daniela Costa",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -65,10 +65,9 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "description": "An Ionic project",
+  "description": "Kepma",
   "cordova": {
     "plugins": {
-      "cordova-plugin-inappbrowser": {},
       "cordova-plugin-whitelist": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
@@ -76,7 +75,8 @@
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
       "android"
